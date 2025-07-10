@@ -67,7 +67,7 @@ export function AboutPage({ onNavigate }) {
             <div className="flex flex-col lg:flex-row items-center lg:items-start space-y-6 lg:space-y-0 lg:space-x-8">
               <div className="w-32 h-32 lg:w-40 lg:h-40 rounded-3xl overflow-hidden ring-4 ring-purple-500/30 shadow-2xl flex-shrink-0">
                 <img
-                  src="/images/abdul-profile.png"
+                  src="/images/abdul-profile.jpg"
                   alt="Abdul Samad"
                   className="w-full h-full object-cover"
                 />

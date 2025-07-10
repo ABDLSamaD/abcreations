@@ -110,6 +110,12 @@ export function ResumePage({ onNavigate }) {
       ],
     },
   ];
+  const handleDownload = () => {
+    const link = document.createElement('a');
+    link.href = '/resume/my_resume.pdf';
+    link.download = 'My_Resume.pdf';
+    link.click();
+  };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-black text-white relative overflow-hidden">
@@ -131,7 +137,7 @@ export function ResumePage({ onNavigate }) {
             </p>
             <Button className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white rounded-2xl px-8 py-3 flex items-center space-x-2 mx-auto">
               <Download className="w-5 h-5" />
-              <span>Download PDF Resume</span>
+              <span className="cursor-pointer" onClick={handleDownload}>Download PDF Resume</span>
             </Button>
           </div>
 

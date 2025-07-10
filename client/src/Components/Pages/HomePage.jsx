@@ -38,7 +38,7 @@ export function HomePage({ onNavigate }) {
             <div className="flex flex-col xs:flex-row items-center xs:items-start space-y-3 xs:space-y-0 xs:space-x-3 sm:space-x-6 mb-3 xs:mb-4 sm:mb-6">
               <div className="w-16 h-16 xs:w-18 xs:h-18 sm:w-20 sm:h-20 md:w-24 md:h-24 rounded-2xl xs:rounded-3xl overflow-hidden ring-2 xs:ring-4 ring-purple-500/30 shadow-2xl flex-shrink-0">
                 <img
-                  src="/images/abdul-profile.png"
+                  src="/images/abdul-profile.jpg"
                   alt="Abdul Samad"
                   className="w-full h-full object-cover"
                 />
