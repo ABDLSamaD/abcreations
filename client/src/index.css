@@ -47,9 +47,18 @@
   }
 }
 
+/* @layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+} */
+
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
-  width: 6px;
+  width: 4px;
 }
 
 ::-webkit-scrollbar-track {
@@ -58,7 +67,7 @@
 
 ::-webkit-scrollbar-thumb {
   background: linear-gradient(45deg, #8b5cf6, #ec4899);
-  border-radius: 3px;
+  border-radius: 2px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -164,6 +173,28 @@ html {
 }
 
 /* Mobile responsive improvements */
+@media (max-width: 390px) {
+  .container {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  /* Extra small text for very small screens */
+  .text-xs-mobile {
+    font-size: 0.625rem;
+  }
+
+  /* Compact spacing */
+  .space-compact > * + * {
+    margin-top: 0.25rem;
+  }
+
+  /* Smaller cards */
+  .card-xs {
+    padding: 0.75rem;
+  }
+}
+
 @media (max-width: 640px) {
   .container {
     padding-left: 1rem;
@@ -184,8 +215,28 @@ html {
   }
 }
 
-/* Enhanced mobile responsiveness */
-@media (max-width: 480px) {
+/* Enhanced mobile responsiveness for very small screens */
+@media (max-width: 390px) {
+  .text-responsive {
+    font-size: 0.75rem;
+  }
+
+  .heading-responsive {
+    font-size: 1.25rem;
+  }
+
+  .card-responsive {
+    padding: 0.75rem;
+  }
+
+  /* Ensure minimum touch targets */
+  .touch-target {
+    min-height: 44px;
+    min-width: 44px;
+  }
+}
+
+@media (min-width: 391px) and (max-width: 480px) {
   .text-responsive {
     font-size: 0.875rem;
   }
@@ -247,4 +298,11 @@ html {
 .dark .loading-skeleton {
   background: linear-gradient(90deg, #374151 25%, #4b5563 50%, #374151 75%);
   background-size: 200% 100%;
+}
+
+/* Bottom navigation safe area */
+@supports (padding-bottom: env(safe-area-inset-bottom)) {
+  .bottom-nav-safe {
+    padding-bottom: calc(0.5rem + env(safe-area-inset-bottom));
+  }
 }

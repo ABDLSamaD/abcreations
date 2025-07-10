@@ -433,14 +433,14 @@ export function ResumePage({ onNavigate }) {
                 </h2>
                 <div className="space-y-3">
                   <a
-                    href="https://github.com/abdulsamad-dev"
+                    href="https://github.com/ABDLSamaD"
                     className="flex items-center space-x-3 p-3 bg-white/5 rounded-2xl hover:bg-white/10 transition-all duration-300"
                   >
                     <Github className="w-5 h-5 text-gray-400" />
                     <span className="text-sm text-white">GitHub</span>
                   </a>
                   <a
-                    href="https://linkedin.com/in/abdulsamad-dev"
+                    href="https://linkedin.com/in/abdul-samad/421793309"
                     className="flex items-center space-x-3 p-3 bg-white/5 rounded-2xl hover:bg-white/10 transition-all duration-300"
                   >
                     <Linkedin className="w-5 h-5 text-blue-400" />

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Button } from "../UI/Button";
 import { Card } from "../UI/Card";
 import { Badge } from "../UI/Badge";
@@ -42,7 +43,7 @@ export function ProjectsPage({ onNavigate }) {
       ],
       status: "Live",
       type: "E-commerce",
-      duration: "3 months",
+      duration: "1 months",
       team: "Solo",
       color: "from-blue-500 to-cyan-500",
       icon: Globe,
@@ -75,10 +76,12 @@ export function ProjectsPage({ onNavigate }) {
       ],
       status: "Live",
       type: "Web Application",
-      duration: "4 months",
+      duration: "2 months",
       team: "Solo",
       color: "from-yellow-500 to-orange-500",
       icon: Zap,
+      Live: "https://electricaapp.vercel.app",
+      code: "https://github.com/ABDLSamaD/Electrica",
     },
     {
       id: 3,
@@ -106,10 +109,11 @@ export function ProjectsPage({ onNavigate }) {
       ],
       status: "Completed",
       type: "Booking System",
-      duration: "2 months",
-      team: "Solo",
+      duration: "1 months",
+      team: "Team of 2",
       color: "from-purple-500 to-pink-500",
       icon: Smartphone,
+      code: "https://github.com/ABDLSamaD/Cinema-Ticket-Management",
     },
     {
       id: 4,
@@ -128,10 +132,12 @@ export function ProjectsPage({ onNavigate }) {
       ],
       status: "Live",
       type: "Portfolio",
-      duration: "1 month",
+      duration: "1 Day",
       team: "Solo",
       color: "from-green-500 to-emerald-500",
       icon: Code,
+      Live: "https://portfolio-mern-sage.vercel.app",
+      code: "https://github.com/ABDLSamaD/PortfolioMERN",
     },
   ];
 
@@ -240,14 +246,18 @@ export function ProjectsPage({ onNavigate }) {
                     <div className="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4">
                       <Button className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white rounded-2xl flex items-center space-x-2">
                         <ExternalLink className="w-4 h-4" />
-                        <span>View Live</span>
+                        <Link to={project.Live} target="_blank">
+                          View Live
+                        </Link>
                       </Button>
                       <Button
                         variant="outline"
                         className="border-white/20 text-white hover:bg-white/10 bg-transparent rounded-2xl flex items-center space-x-2"
                       >
                         <Github className="w-4 h-4" />
-                        <span>View Code</span>
+                        <Link to={project.code} target="_blank">
+                          View Code
+                        </Link>
                       </Button>
                     </div>
                   </div>

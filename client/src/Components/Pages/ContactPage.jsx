@@ -170,7 +170,7 @@ export function ContactPage({ onNavigate }) {
       name: "LinkedIn",
       username: "Abdul Samad",
       color: "from-blue-600 to-blue-800",
-      url: "https://linkedin.com/in/abdulsamad-dev",
+      url: "https://linkedin.com/in/abdul-samad/421793309",
     },
   ];
 

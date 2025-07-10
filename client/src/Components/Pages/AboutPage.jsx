@@ -121,7 +121,9 @@ export function AboutPage({ onNavigate }) {
             <Card className="bg-gradient-to-br from-purple-900/30 to-pink-900/30 backdrop-blur-xl border border-purple-500/20 p-6 rounded-3xl shadow-xl text-center">
               <Clock className="w-8 h-8 mx-auto mb-3 text-purple-400" />
               <div className="text-2xl font-bold text-white mb-1">1.5+</div>
-              <div className="text-sm text-gray-400">Years Experience</div>
+              <div className="text-sm text-gray-400">
+                Years Experience Hands_ON
+              </div>
             </Card>
             <Card className="bg-gradient-to-br from-blue-900/30 to-cyan-900/30 backdrop-blur-xl border border-blue-500/20 p-6 rounded-3xl shadow-xl text-center">
               <Target className="w-8 h-8 mx-auto mb-3 text-blue-400" />
@@ -131,7 +133,9 @@ export function AboutPage({ onNavigate }) {
             <Card className="bg-gradient-to-br from-green-900/30 to-emerald-900/30 backdrop-blur-xl border border-green-500/20 p-6 rounded-3xl shadow-xl text-center">
               <Users className="w-8 h-8 mx-auto mb-3 text-green-400" />
               <div className="text-2xl font-bold text-white mb-1">5+</div>
-              <div className="text-sm text-gray-400">Happy Clients</div>
+              <div className="text-sm text-gray-400">
+                Happy Clients Offline Market
+              </div>
             </Card>
             <Card className="bg-gradient-to-br from-orange-900/30 to-red-900/30 backdrop-blur-xl border border-orange-500/20 p-6 rounded-3xl shadow-xl text-center">
               <Award className="w-8 h-8 mx-auto mb-3 text-orange-400" />
@@ -185,7 +189,7 @@ export function AboutPage({ onNavigate }) {
                   {
                     icon: Shield,
                     title: "Security & Authentication",
-                    desc: "JWT, OAuth, session management, and secure API development",
+                    desc: "JWT, OAuth, session management, Load Balancing, Reverse Proxy Ngnix, and secure API development",
                     color: "from-green-500 to-emerald-500",
                   },
                   {
