@@ -126,10 +126,10 @@ export function ContactPage({ onNavigate }) {
     {
       icon: Mail,
       title: "Email",
-      value: "samadpakhtoon09@gmail.com",
+      value: "abdsamad.info@gmail.com",
       description: "Send me an email anytime",
       color: "from-blue-500 to-cyan-500",
-      action: "mailto:samadpakhtoon09@gmail.com",
+      action: "mailto:abdsamad.info@gmail.com",
     },
     {
       icon: Phone,
@@ -137,7 +137,7 @@ export function ContactPage({ onNavigate }) {
       value: "0330-5786110",
       description: "Call me for urgent matters",
       color: "from-green-500 to-emerald-500",
-      action: "tel:+923305786110",
+      action: "tel:+92 330 5786110",
     },
     {
       icon: MessageCircle,
@@ -161,7 +161,7 @@ export function ContactPage({ onNavigate }) {
     {
       icon: Github,
       name: "GitHub",
-      username: "@abdulsamad-dev",
+      username: "ABDLSamaD",
       color: "from-gray-700 to-gray-900",
       url: "https://github.com/ABDLSamaD",
     },
